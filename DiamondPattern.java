@@ -10,12 +10,13 @@ public class DiamondPattern {
                 System.out.println();
 
         }
-        for(int w=5; w<0; w--){
-            for(int s=1; s>w; s--) {
+        int row = 4;
+        for(int w=1; w<=row-1; w--){
+            for(int s=1; s< w; s--) {
                 System.out.print(" ");
             }
-            for(int d=0; d<w;d++){
-                System.out.print(" *");
+            for(int d=0; d<w-1;d++){
+                System.out.print("*" + " ");
             }
             System.out.println();
 
